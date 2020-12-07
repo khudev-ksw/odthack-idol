@@ -36,10 +36,10 @@ class ImageAndIcons extends StatelessWidget {
                       ),
                     ),
                     Spacer(),
+                    IconCard(icon: Icons.info_outline),
                     IconCard(icon: Icons.all_out),
                     IconCard(icon: Icons.all_out),
-                    IconCard(icon: Icons.all_out),
-                    IconCard(icon: Icons.all_out)
+                    // IconCard(icon: Icons.all_out),
                   ],
                 ),
               ),
@@ -61,7 +61,7 @@ class ImageAndIcons extends StatelessWidget {
                 image: DecorationImage(
                     alignment: Alignment.centerLeft,
                     image: AssetImage(
-                        'assets/images/profile_03_joyuri_izone.jpeg'),
+                        'assets/images/profile_01_arin_ohmygirl.jpeg'),
                     fit: BoxFit.cover),
               ),
             )

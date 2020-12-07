@@ -63,27 +63,32 @@ class RecommendIdolCard extends StatelessWidget {
       width: size.width * 0.4,
       child: Column(
         children: <Widget>[
-          Image.asset(
-            image,
-            height: size.height * 0.337,
+          Container(
             width: size.width * 0.4,
-            fit: BoxFit.cover,
+            height: size.height * 0.337,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10), topRight: Radius.circular(10)),
+              image:
+                  DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
+            ),
           ),
           GestureDetector(
             onTap: press,
             child: Container(
               padding: EdgeInsets.all(kDefaultPadding / 2),
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(10),
-                      bottomRight: Radius.circular(10)),
-                  boxShadow: [
-                    BoxShadow(
-                        offset: Offset(0, 10),
-                        blurRadius: 50,
-                        color: kPrimaryColor.withOpacity(0.23))
-                  ]),
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10)),
+                boxShadow: [
+                  BoxShadow(
+                      offset: Offset(0, 10),
+                      blurRadius: 50,
+                      color: kPrimaryColor.withOpacity(0.23))
+                ],
+              ),
               child: Row(
                 children: <Widget>[
                   RichText(

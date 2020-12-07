@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:idol_trip_proto/components/back_with_title.dart';
-import 'package:idol_trip_proto/constants.dart';
-import 'package:idol_trip_proto/screens/lists/components/recommend_idol_list.dart';
+import 'package:idol_trip_proto/screens/lists/components/recommend_course_list.dart';
+
+import '../../../constants.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -35,18 +36,12 @@ class Body extends StatelessWidget {
             height: MediaQuery.of(context).padding.top + 10,
           ),
           BackWithTitle(
-            title: '추천 아이돌',
+            title: '추천 코스',
             press: () {},
           ),
           // It will cover 40% of our total width
           SizedBox(height: kDefaultPadding),
-          RecommendIdolList(
-            idols: idols,
-          ),
-          RecommendIdolList(
-            idols: idols,
-          ),
-          RecommendIdolList(
+          RecommendCourseList(
             idols: idols,
           ),
           SizedBox(height: kDefaultPadding)
