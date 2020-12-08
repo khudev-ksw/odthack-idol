@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:idol_trip_proto/components/bottom_nav_bar.dart';
 // import 'package:idol_trip_proto/constants.dart';
 import 'package:idol_trip_proto/screens/home/components/body.dart';
 

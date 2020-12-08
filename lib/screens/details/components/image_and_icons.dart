@@ -39,7 +39,6 @@ class ImageAndIcons extends StatelessWidget {
                     IconCard(icon: Icons.info_outline),
                     IconCard(icon: Icons.all_out),
                     IconCard(icon: Icons.all_out),
-                    // IconCard(icon: Icons.all_out),
                   ],
                 ),
               ),
